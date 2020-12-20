@@ -2,10 +2,10 @@ const { result } = require('lodash')
 const mysql = require('mysql')
 
 var conn = mysql.createConnection({
-    host: 'sql10.freemysqlhosting.net',
-    user: 'sql10383111',
-    password: 'LBnHDyUTyY',
-    database: 'sql10383111'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USERNAME,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE
 })
 
 conn.connect(function(error){
