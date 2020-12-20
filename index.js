@@ -18,6 +18,6 @@ app.use(
 routes(app)
 
 
-app.listen( 4000, function(){
+app.listen( process.env.PORT || 4000, function(){
     console.log( `Running at localhost:4000` )
 })
