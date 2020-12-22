@@ -2,8 +2,8 @@ var conn = require('./../../databases/mysql/conn.js')
 
 var table = 'usuarios'
 
-var fillable = ['Nombres', 'Apellidos', 'Cedula', 'Email', 'Telefono']
-var requiredFields = ['Nombres', 'Apellidos', 'Cedula', 'Email', 'Telefono']
+var fillable = ['Nombres', 'Apellidos', 'Cedula', 'Email', 'Telefono', 'Resultado']
+var requiredFields = ['Nombres', 'Apellidos', 'Cedula', 'Email', 'Telefono', 'Resultado']
 
 async function get(){
     return await conn.get( table )
